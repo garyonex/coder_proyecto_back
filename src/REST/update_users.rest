@@ -1,0 +1,8 @@
+PUT  http://localhost:3001/user/62bbfc9559446fc388a92218 HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYmJmYzk1NTk0NDZmYzM4OGE5MjIxOCIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE2NTY0OTI3NjgsImV4cCI6MTY1Njc1MTk2OH0.Q2AziLulQxqOcPsTv_WoeCcxTG042MEBfqrgXZ7Mlys
+
+{
+    "username":"Gary calle "
+
+}

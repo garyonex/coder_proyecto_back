@@ -1,0 +1,8 @@
+GET   http://localhost:3001/user/buscar/62bbfc9559446fc388a92218 HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYmM3Yjg1YjAwNjVkZDgyODBkOTM0NiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY1NjUxOTY5MywiZXhwIjoxNjU2Nzc4ODkzfQ.F06igMgDcY_LXgWGhfsJ8dWMWC99wdoBrJtngc4W368
+
+{
+    "username":"Gary calle "
+
+}

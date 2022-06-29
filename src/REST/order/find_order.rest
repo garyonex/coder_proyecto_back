@@ -1,0 +1,4 @@
+GET   http://localhost:3001/api/orders/buscar/62bbfc9559446fc388a92218 HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYmM3Yjg1YjAwNjVkZDgyODBkOTM0NiIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY1NjUyNDY4NCwiZXhwIjoxNjU2NzgzODg0fQ.2e8CYQhn0QGUA4Q2KkoRixC-X-ThiBazmw52sdE3qc4
+
