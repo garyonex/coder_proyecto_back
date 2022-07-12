@@ -14,9 +14,12 @@
         </div>
     </div>
     <div class="container text-end">
-        <a class="btn btn-danger ml-2" href="/" role="button">Cerrar sesion</a>
+        <a class="btn btn-danger ml-2" href="/logout" role="button"
+            >Cerrar sesion</a
+        >
     </div>
 </main>
+<footer><%- include ('./partials/footer.ejs') %></footer>
 <style>
     .container-fluid em {
         text-transform: capitalize;
@@ -26,5 +29,3 @@
         text-decoration: none;
     }
 </style>
-<hr />
-<footer><%- include ('./partials/footer.ejs') %></footer>
