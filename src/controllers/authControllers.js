@@ -16,7 +16,7 @@ export const register = async (req, res) => {
     try {
         const savedUser = await newUser.save();
         console.log(savedUser);
-        res.status(201).json(savedUser);
+        res.status(201).redirect('/register/login');
     } catch (error) {
         res.status(500).json(error);
     }
@@ -45,8 +45,12 @@ export const login = async (req, res) => {
             { expiresIn: '3d' }
         );
         const { password, ...others } = user._doc;
-        res.status(200).json({ ...others, accessToken });
+        //res.status(200).json({ ...others, accessToken });
+        res.status(200).render('logeado', {
+            user: user.username,
+            email: user.email
+        });
     } catch (error) {
-        res.status(500).json(error)
+        res.status(500).json(error);
     }
 };

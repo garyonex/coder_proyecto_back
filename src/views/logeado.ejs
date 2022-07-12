@@ -1,0 +1,30 @@
+<%- include ('./partials/head.ejs') %>
+<main>
+    <div class="container-fluid">
+        <div class="text-center">
+            <h1>Bienvenido</h1>
+            <p>
+                Un gusto saludarte ✌ :
+                <em class="h2 user_name"> <%= user %> </em>
+            </p>
+            <p>
+                Email de ingreso 🚧 :
+                <strong> <%= email %> </strong>
+            </p>
+        </div>
+    </div>
+    <div class="container text-end">
+        <a class="btn btn-danger ml-2" href="/" role="button">Cerrar sesion</a>
+    </div>
+</main>
+<style>
+    .container-fluid em {
+        text-transform: capitalize;
+        color: rgba(240, 28, 28, 0.716);
+    }
+    a {
+        text-decoration: none;
+    }
+</style>
+<hr />
+<footer><%- include ('./partials/footer.ejs') %></footer>
