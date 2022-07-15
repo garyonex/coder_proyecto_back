@@ -20,6 +20,9 @@ const UserSchema = new Schema(
             type: Boolean,
             default: false,
         },
+        facebookId: {
+            type: String
+        }
     },
     {
         versionKey: false, // para eliminar el _v
