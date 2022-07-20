@@ -14,12 +14,20 @@ import usersRoutes from './routes/user.routes.js';
 import logoutRoutes from './routes/logout.routes.js';
 import loginRoutes from './routes/login.routes.js'
 import fbRoutes from './routes/fbAuth.routes.js'
+import yargs from 'yargs'
+import { hideBin} from 'yargs/helpers'
+
+//**---- VARIABLE DE ENTORNOS  *
+const variable = yargs(hideBin(process.argv))
+const arg = variable.alias({p:'puerto'}).default({p:8080}).argv
 
 //**---- INICIO SERVIDOR */
 const app = express();
-const PORT = 3001;
+const PORT = arg.p||3001;
 app.listen(PORT);
 console.log(`Server listen port ${PORT}`);
+
+
 
 //**----SETEO  */
 app.set('views', './src/views');
@@ -82,7 +90,7 @@ app.use('/register', sessionOn, authRoutes, (req, res) => {
 });
 app.use('/user', sessionOn, usersRoutes);
 app.use('/login',loginRoutes)
-app.use('/api/carts', cartsRoutes);e
+app.use('/api/carts', cartsRoutes);
 app.use('/api/orders', orderRoutes);
 app.use('/logout', logoutRoutes);
 
