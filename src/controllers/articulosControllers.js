@@ -1,8 +1,10 @@
-import Articulos from '../models/ArticulosModels.js'
+import logger from '../logs/loggers.js';
+import Articulos from '../models/ArticulosModels.js';
 //**---- montrar todo */
 export const mostrarTodos = async (req, res) => {
     try {
         const articulos = await Articulos.find();
+        logger.silly('mostrando articulos');
         res.json(articulos);
     } catch (error) {
         res.status(500).json({
@@ -25,8 +27,10 @@ export const crearArt = async (req, res) => {
             stock: req.body.stock,
         });
         const guardadoArticulo = await nuevoArticulo.save();
+        logger.info('Articulo guardado con exito');
         res.json(guardadoArticulo);
     } catch (error) {
+        logger.error('Error al crear articulo');
         res.status(500).json({
             message:
                 error.message ||
@@ -40,12 +44,14 @@ export const buscar = async (req, res) => {
     try {
         const buscaId = await Articulos.findById(id);
         if (!buscaId) {
+            logger.info('elemento no encontrado');
             return res.status(404).json({
                 message: `EL elementos que buscas ${id} no se encuentra`,
             });
         }
         res.json(buscaId);
     } catch (error) {
+        logger.error('Error al mostrar aticulo solicitado con ID');
         res.status(500).json({
             message: error.message || `Error en id ${id}`,
         });
@@ -56,8 +62,10 @@ export const eliminarUno = async (req, res) => {
     const { id } = req.params;
     try {
         await Articulos.findByIdAndDelete(id);
+        logger.warn('Articulo eliminado correctamente');
         res.json({ mensaje: 'Articulo eliminado correctamente' });
     } catch (error) {
+        logger.error(`No se encuentra ${id} no se puede eliminar`);
         res.status(500).json({
             message: error.message || `Error en id ${id} no se puede eliminar`,
         });
@@ -67,15 +75,17 @@ export const eliminarUno = async (req, res) => {
 export const mostrarAlgunos = async (req, res) => {
     try {
         const muestraUnica = await Articulos.find({}, { stock: 1 });
+        logger.info(`muestra unica de ${muestraUnica}`);
         res.json(muestraUnica);
     } catch (error) {
+        logger.error('Error al buscar');
         res.status(404).json({
             message: `Error al buscar productos`,
         });
     }
 };
 
-//**---- actualiar algunos */
+//**---- actualizar algunos */
 
 export const actualizar = async (req, res) => {
     const { id } = req.params;
@@ -85,8 +95,10 @@ export const actualizar = async (req, res) => {
     }
     try {
         await Articulos.findOneAndUpdate(id, body);
+        logger.info(`Articulo ${id} actualizado con exito`);
         res.json({ mensaje: ' actualizado con exito' });
     } catch (error) {
+        logger.error(`Articulo ${id} no se puede actualizar`);
         res.status(500).json({
             message: `Error en id ${id} no se puede actualizar`,
         });

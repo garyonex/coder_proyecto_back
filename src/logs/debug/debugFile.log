@@ -1,0 +1,110 @@
+{ message: 'Servidor conectado en 3001', level: 'info' }
+{ message: 'Index', level: 'info' }
+{ message: 'Error en username null', level: 'error' }
+{ message: 'Servidor conectado en 3001', level: 'info' }
+{ message: 'Index', level: 'info' }
+{ message: 'Usuario registrado', level: 'info' }
+{ message: 'Error en username null', level: 'error' }
+{ message: 'Servidor conectado en 3001', level: 'info' }
+{
+  message: 'Error en username {\n' +
+    '  _id: new ObjectId("62c7b4c5905535c794dc3a15"),\n' +
+    "  username: 'titi',\n" +
+    "  email: 'titi@gmail.com',\n" +
+    "  passwordHash: 'U2FsdGVkX1+lyenY3An0P1/xOFSr1tE6RubCgWpwg+s=',\n" +
+    '  isAdmin: false,\n' +
+    '  createdAt: 2022-07-08T04:38:29.482Z,\n' +
+    '  updatedAt: 2022-07-08T04:38:29.482Z\n' +
+    '}',
+  level: 'error'
+}
+{ message: 'User login undefined', level: 'info' }
+{ message: 'Index', level: 'info' }
+{
+  message: 'Error en username {\n' +
+    '  _id: new ObjectId("62c7b4c5905535c794dc3a15"),\n' +
+    "  username: 'titi',\n" +
+    "  email: 'titi@gmail.com',\n" +
+    "  passwordHash: 'U2FsdGVkX1+lyenY3An0P1/xOFSr1tE6RubCgWpwg+s=',\n" +
+    '  isAdmin: false,\n' +
+    '  createdAt: 2022-07-08T04:38:29.482Z,\n' +
+    '  updatedAt: 2022-07-08T04:38:29.482Z\n' +
+    '}',
+  level: 'error'
+}
+{ message: 'User login undefined', level: 'info' }
+{
+  message: 'Error en username {\n' +
+    '  _id: new ObjectId("62c7b4c5905535c794dc3a15"),\n' +
+    "  username: 'titi',\n" +
+    "  email: 'titi@gmail.com',\n" +
+    "  passwordHash: 'U2FsdGVkX1+lyenY3An0P1/xOFSr1tE6RubCgWpwg+s=',\n" +
+    '  isAdmin: false,\n' +
+    '  createdAt: 2022-07-08T04:38:29.482Z,\n' +
+    '  updatedAt: 2022-07-08T04:38:29.482Z\n' +
+    '}',
+  level: 'error'
+}
+{ message: 'Error en password', level: 'error' }
+{ message: 'User login undefined', level: 'info' }
+{ message: 'Error en username null', level: 'error' }
+{ message: 'Servidor conectado en 3001', level: 'info' }
+{ message: 'Index', level: 'info' }
+{
+  message: 'Error en username {\n' +
+    '  _id: new ObjectId("62bc7b85b0065dd8280d9346"),\n' +
+    "  username: 'admin',\n" +
+    "  email: 'admin@email.com',\n" +
+    "  passwordHash: 'U2FsdGVkX18QMoJz7yh8vG8GaXhxzsDbC1Vvu6EiIGo=',\n" +
+    '  isAdmin: true,\n' +
+    '  createdAt: 2022-06-29T16:19:17.406Z,\n' +
+    '  updatedAt: 2022-06-29T16:19:17.406Z\n' +
+    '}',
+  level: 'error'
+}
+{ message: 'Error en password', level: 'error' }
+{ message: 'User login undefined', level: 'info' }
+{
+  message: 'Error en username {\n' +
+    '  _id: new ObjectId("62bc7b85b0065dd8280d9346"),\n' +
+    "  username: 'admin',\n" +
+    "  email: 'admin@email.com',\n" +
+    "  passwordHash: 'U2FsdGVkX18QMoJz7yh8vG8GaXhxzsDbC1Vvu6EiIGo=',\n" +
+    '  isAdmin: true,\n' +
+    '  createdAt: 2022-06-29T16:19:17.406Z,\n' +
+    '  updatedAt: 2022-06-29T16:19:17.406Z\n' +
+    '}',
+  level: 'error'
+}
+{ message: 'Error en password', level: 'error' }
+{ message: 'User login undefined', level: 'info' }
+{ message: 'Servidor conectado en 3001', level: 'info' }
+{ message: 'Index', level: 'info' }
+{ message: 'Usuario registrado', level: 'info' }
+{
+  message: 'Usuario guardado {\n' +
+    "  username: 'agua',\n" +
+    "  email: 'agua@gmail.com',\n" +
+    "  passwordHash: 'U2FsdGVkX19hsIkXyQv283BYU2INtSfUv3AFi8L7+bU=',\n" +
+    '  isAdmin: false,\n' +
+    '  _id: new ObjectId("62f1821dff981a1d4f6f1443"),\n' +
+    '  createdAt: 2022-08-08T21:37:33.305Z,\n' +
+    '  updatedAt: 2022-08-08T21:37:33.305Z\n' +
+    '}',
+  level: 'info'
+}
+{ message: 'Usuario registrado', level: 'info' }
+{ message: 'Index', level: 'info' }
+{
+  message: 'Error en username {\n' +
+    '  _id: new ObjectId("62f1821dff981a1d4f6f1443"),\n' +
+    "  username: 'agua',\n" +
+    "  email: 'agua@gmail.com',\n" +
+    "  passwordHash: 'U2FsdGVkX19hsIkXyQv283BYU2INtSfUv3AFi8L7+bU=',\n" +
+    '  isAdmin: false,\n' +
+    '  createdAt: 2022-08-08T21:37:33.305Z,\n' +
+    '  updatedAt: 2022-08-08T21:37:33.305Z\n' +
+    '}',
+  level: 'error'
+}
+{ message: 'User login undefined', level: 'info' }
