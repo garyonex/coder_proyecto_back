@@ -13,9 +13,11 @@ import loginRoutes from './routes/login.routes.js'
 
 //**---- INICIO SERVIDOR */
 const app = express();
-const PORT = process.env.PORT || 3001;
-app.listen(PORT);
-console.log(`Server listen port ${PORT}`);
+const PORT = process.env.PORT || 8081;
+app.listen(PORT,()=>{
+    console.log(`Server on port ${PORT}`)
+});
+
 
 //**----SETEO  */
 app.set('views', './src/views');
