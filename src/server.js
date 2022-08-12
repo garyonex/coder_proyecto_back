@@ -13,9 +13,15 @@ import loginRoutes from './routes/login.routes.js'
 
 //**---- INICIO SERVIDOR */
 const app = express();
+<<<<<<< HEAD
 const PORT = process.env.PORT || 3001;
 app.listen(PORT,()=>{
     console.log(`server on ${PORT}`)
+=======
+const PORT = process.env.PORT || 8081;
+app.listen(PORT,()=>{
+    console.log(`Server on port ${PORT}`)
+>>>>>>> 303a982e37782f0efa02b13af17adc394debab50
 });
 
 
